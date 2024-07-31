@@ -1,5 +1,6 @@
 // task_1/js/main.ts
 
+// Existing interfaces and objects
 interface Teacher {
     readonly firstName: string;
     readonly lastName: string;
@@ -32,4 +33,17 @@ const director1: Directors = {
 };
 
 console.log(director1);
+
+// New code for the printTeacher function and interface
+
+interface printTeacherFunction {
+    (firstName: string, lastName: string): string;
+}
+
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+    return `${firstName.charAt(0)}. ${lastName}`;
+};
+
+// Example usage
+console.log(printTeacher("John", "Doe"));  // Output: J. Doe
 
