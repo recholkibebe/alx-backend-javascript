@@ -1,21 +1,4 @@
-// task_1/js/main.ts
-
-// Existing interfaces and objects
-interface Teacher {
-    readonly firstName: string;
-    readonly lastName: string;
-    fullTimeEmployee: boolean;
-    yearsOfExperience?: number;
-    location: string;
-    [propName: string]: any;
-}
-
-interface Directors extends Teacher {
-    numberOfReports: number;
-}
-
-const teacher3: Teacher = {
-    firstName: 'John',
+n',
     fullTimeEmployee: false,
     lastName: 'Doe',
     location: 'London',
@@ -46,4 +29,6 @@ const printTeacher: printTeacherFunction = (firstName, lastName) => {
 
 // Example usage
 console.log(printTeacher("John", "Doe"));  // Output: J. Doe
+
+
 
